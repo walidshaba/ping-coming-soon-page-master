@@ -14,17 +14,6 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
     <script src="assets/scripts/main.js" defer></script>
     <title>Frontend Mentor | Ping coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <section>
@@ -47,14 +36,18 @@
         <p>Subscribe and get notified</p>
       </div>
       <div class="form">
-        <form action="">
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="Your email address..."
-          />
-          <input type="submit" value="Notify Me" />
+        <form action="" id="form2">
+          <div class="message">
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Your email address..."
+            />
+            <p class="invalid">Please provide a valid email address</p>
+          </div>
+
+          <input type="submit" value="Notify Me" class="submit" />
         </form>
       </div>
       <div class="image">
