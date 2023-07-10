@@ -2,8 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  border: 0;
   box-sizing: border-box;
+  font-family: var(--libreFranklin);
 }
 
 :root {
@@ -20,4 +20,86 @@
   /* Neutral */
   --gray: hsl(0, 0%, 59%);
   --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  height: 700px;
+}
+
+section .logo {
+  display: flex;
+}
+
+section .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+section .txt h1 {
+  font-size: 50px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+section .txt h1 span {
+  font-weight: 700;
+  color: var(--veryDarkBlue);
+}
+
+section .txt p {
+  font-size: 18px;
+  color: var(--veryDarkBlue);
+}
+
+.form {
+  width: 65 0px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section .image {
+  width: 650px;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+footer .socials span {
+  position: relative;
+  width: 40px;
+  border: solid 1px var(--blue);
+}
+
+footer .socials #social {
+  top: 50%;
+  position: relative;
+  width: 20px;
+  fill: var(--blue);
 }
