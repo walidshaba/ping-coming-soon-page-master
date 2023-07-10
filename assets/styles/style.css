@@ -52,7 +52,7 @@ section .txt {
 }
 
 section .txt h1 {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 300;
   color: var(--gray);
 }
@@ -63,12 +63,12 @@ section .txt h1 span {
 }
 
 section .txt p {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--veryDarkBlue);
 }
 
 .form {
-  width: 65 0px;
+  width: 650px;
 }
 
 form {
@@ -77,29 +77,29 @@ form {
   width: 100%;
 }
 
+form input[type='email'] {
+  width: 420px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid var(--gray);
+  padding: 0 20px;
+}
+::placeholder {
+  color: var(--gray);
+}
+form input[type='submit'] {
+  border: none;
+  background-color: var(--blue);
+  border-radius: 40px;
+  width: 200px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
 section .image {
   width: 650px;
 }
 
 .image img {
   max-width: 100%;
-}
-
-footer .socials {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-}
-
-footer .socials span {
-  position: relative;
-  width: 40px;
-  border: solid 1px var(--blue);
-}
-
-footer .socials #social {
-  top: 50%;
-  position: relative;
-  width: 20px;
-  fill: var(--blue);
 }
