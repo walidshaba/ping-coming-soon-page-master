@@ -86,6 +86,7 @@ form input[type='email'] {
 }
 ::placeholder {
   color: var(--gray);
+  font-size: 15px;
 }
 form input[type='submit'] {
   border: none;
