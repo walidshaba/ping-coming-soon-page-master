@@ -6,7 +6,9 @@ form.addEventListener('submit', (e) => {
   if (!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
     message.classList.add('display');
     e.preventDefault();
-    submit.style.marginTop = '25px';
+    if (window.matchMedia('(max-width: 550px)').matches) {
+      submit.style.marginTop = '35px';
+    }
   } else {
     alert('Email Sent');
   }
